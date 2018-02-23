@@ -1,0 +1,42 @@
+// btn
+.btn {
+  height: 47px;
+  border: solid 1.5px #ffffff;
+  border-radius: 3px;
+  a {
+    font-weight: lighter;
+    color: #fff;
+    vertical-align: middle;
+  }
+}
+.btn_lg {
+  width: 16.25rem;
+  height: 4.875rem;
+  border-radius: 3px;
+  a {
+    display: block;
+    text-align: center;
+    line-height: 4.875rem;
+  }
+  &:hover, a:hover {
+    opacity: .8;
+  }
+}
+@mixin ghost-button($font, $font-size, $font-color, $border-size, $border-color, $padding, $transition-speed, $hover-color)
+{
+  display:inline-block;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-family: $font;
+  font-size: $font-size;
+  color:$font-color;
+  border:$border-size solid $border-color;
+  padding:$padding;
+  -webkit-transition: color $transition-speed, background $transition-speed;
+  transition: color $transition-speed, background $transition-speed;
+  &:hover
+  {
+    background:$border-color;
+    color:$hover-color;
+  }
+}

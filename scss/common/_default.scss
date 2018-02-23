@@ -1,0 +1,37 @@
+/*****-------------------------------
+    Layout
+-------------------------------*****/
+
+.l-header {
+    position: relative;
+    z-index: 100000;
+    background-color: #1e1e1e;
+    @include mq-up(md) {
+        background: #fff;
+    }
+}
+
+.l-footer {
+    background: #ff7800;
+    background: -moz-linear-gradient(-45deg, #ff7800 0%, #ff9600 100%);
+    background: -webkit-linear-gradient(-45deg, #ff7800 0%, #ff9600 100%);
+    background: linear-gradient(135deg, #ff7800 0%, #ff9600 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7800', endColorstr='#ff9600', GradientType=1);
+}
+
+.l-container {
+    @include mq-up(md) {
+        max-width: 750px;
+    }
+    @include mq-up(lg) {
+        max-width: 970px;
+    }
+    @include mq-up(xl) {
+        max-width: 1170px
+    }
+}
+
+.l-mainvisual {
+    padding: 0;
+    margin-bottom: 55px;
+}

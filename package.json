@@ -1,0 +1,31 @@
+{
+    "name": "1802C_mcworks",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lazulirose/1802C_mcworks.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lazulirose/1802C_mcworks/issues"
+    },
+    "homepage": "https://github.com/lazulirose/1802C_mcworks#readme",
+    "description": "",
+    "devDependencies": {
+        "browser-sync": "^2.18.13",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^4.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-frontnote": "^2.0.1",
+        "gulp-imagemin": "^3.3.0",
+        "gulp-jshint": "^2.0.4",
+        "gulp-plumber": "^1.1.0",
+        "gulp-sass": "^3.1.0",
+        "gulp-uglify": "^3.0.0"
+    }
+}

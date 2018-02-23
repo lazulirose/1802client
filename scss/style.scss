@@ -1,0 +1,28 @@
+@charset "UTF-8";
+///*--------------------
+//>>> TABLE OF CONTENTS:
+//----------------------
+//    1.0 reset
+//    2.0 common
+//    3.0 mixins_extends
+//    4.0 base
+//    5.0 styles
+//--------------------*/
+//*----- 1.0 reset -----*/
+@import 'common/reset';
+//*----- 2.0 common -----*/
+//@import 'common/fonts';
+@import 'common/color';
+@import 'common/mediaquery';
+//*----- 3.0 mixins_extends -----*/
+//@import 'mixins_extends';
+//*----- 4.0 base -----*/
+@import 'common/base';
+//*----- 5.0 styles -----*/
+// component part styles
+@import 'template/header';
+@import 'template/footer';
+//@import 'template/aside';
+@import 'template/component';
+// include each styles
+@import 'common/default';

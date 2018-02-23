@@ -1,0 +1,38 @@
+.fotter-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 140px;
+    @include mq-up(md) {
+        max-width: 1000px;
+        margin: auto;
+    }
+}
+
+.fotter-nav {
+    display: flex;
+    flex-wrap: wrap;
+    @include mq-up(md) {
+        width: 100%;
+    }
+}
+
+.fotter-item {
+    width: 50%;
+    line-height: 2.2;
+    font-size: 0.9375rem;
+    @include mq-up(md) {
+        flex: 1;
+        line-height: 1;
+        text-align: center;
+    }
+}
+
+.fotter-link {
+    height: 24px;
+}
+
+.fotter-container .navbar-brand {
+    padding-top: 0 !important;
+    padding-left: 50px !important;
+}

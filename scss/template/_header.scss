@@ -1,0 +1,154 @@
+/*  header
+------------------------*/
+
+.navbar-header {
+    float: none;
+    border: none !important;
+}
+
+.navbar-logo img {
+    display: block;
+    width: 160px;
+}
+
+.navbar-top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 30px;
+    background: #1e1e1e;
+    @include mq-up(md) {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1000px;
+        height: 50px;
+        padding: 0;
+        margin: 0 auto;
+        background: #fff;
+    }
+}
+
+.navbar-tagline {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    color: #333;
+}
+
+.navbar-top-right {
+    display: flex;
+    flex-direction: column;
+    @include mq-up(md) {
+        flex-direction: row;
+    }
+}
+
+.navbar-form {
+    display: flex;
+    justify-content: center;
+}
+
+.search-btn {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.search-btn:hover {
+    opacity: .4;
+    transition: .35s;
+    background-color: transparent;
+}
+
+.officialsns-link,
+.search-icon {
+    width: 30px;
+}
+
+.search-icon {
+    margin-left: 6px;
+}
+
+.officialsns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.officialsns-link:not(:last-child) {
+    margin-right: 10px;
+}
+
+.form-control {
+    min-width: 100%;
+    max-width: 210px;
+    border-radius: 0;
+    border: 1px solid #969696;
+}
+
+.navbar-bottom {
+    position: absolute;
+    z-index: 20000;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    background: #1e1e1e;
+    line-height: 2;
+    @include mq-up(md) {
+        bottom: -70px;
+        flex-direction: row;
+        max-width: 1000px;
+        height: 60px;
+        margin: auto;
+    }
+}
+
+.navber-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    @include mq-up(md) {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.nav-item {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    @include mq-up(md) {
+        padding: 0;
+    }
+}
+
+.nav-item:not(:last-child) {
+    border-bottom: 1px solid #ff7800;
+    @include mq-up(md) {
+        border: none;
+    }
+}
+
+.nav-link {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-size: 0.9375rem;
+}
+
+.nav-link a:hover::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #ff7800;
+}

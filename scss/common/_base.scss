@@ -1,0 +1,65 @@
+/*  Import Web font
+------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+/*****-------------------------------
+    Common initial setting
+-------------------------------*****/
+
+body {
+    overflow-x: hidden;
+    font-size: 14px;
+    color: #fff;
+    @include mq-up(lg) {
+        font-size: 16px;
+    }
+}
+
+main {
+    display: block;
+    padding-bottom: 120px;
+    background: rgb(30, 52, 87);
+    background: -moz-linear-gradient(-45deg, rgb(30, 52, 87) 5%, rgb(30, 30, 30) 68%);
+    background: -webkit-linear-gradient(-45deg, rgb(30, 52, 87) 5%, rgb(30, 30, 30) 68%);
+    background: linear-gradient(135deg, rgb(30, 52, 87) 5%, rgb(30, 30, 30) 68%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3457', endColorstr='#1e1e1e', GradientType=1);
+    @include mq-up(lg) {
+        margin-top: -35px;
+    }
+}
+
+a {
+    color: #fff;
+}
+
+
+/*****-------------------------------
+    Mediaquery initial setting
+-------------------------------*****/
+
+.pc-only {
+    display: none;
+    @include mq-up(md) {
+        display: block;
+    }
+}
+
+.sp-only {
+    @include mq-up(md) {
+        display: none;
+    }
+}
+
+
+/*****-------------------------------
+    Custom common setting
+-------------------------------*****/
+
+.page-title,
+.nav-link,
+.fotter-link {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
