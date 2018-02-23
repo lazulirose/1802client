@@ -189,6 +189,7 @@ body {
 
 main {
     display: block;
+    padding-bottom: 120px;
     background: rgb(30, 52, 87);
     background: -moz-linear-gradient(-45deg, rgb(30, 52, 87) 5%, rgb(30, 30, 30) 68%);
     background: -webkit-linear-gradient(-45deg, rgb(30, 52, 87) 5%, rgb(30, 30, 30) 68%);
@@ -352,6 +353,10 @@ a {
 
 .footer {
     background: #ff7800;
+    background: -moz-linear-gradient(-45deg, #ff7800 0%, #ff9600 100%);
+    background: -webkit-linear-gradient(-45deg, #ff7800 0%, #ff9600 100%);
+    background: linear-gradient(135deg, #ff7800 0%, #ff9600 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7800', endColorstr='#ff9600', GradientType=1);
 }
 
 .navbar-header {
@@ -384,7 +389,7 @@ a {
 
 .mainvisual {
     padding: 0;
-    margin: 0;
+    margin-bottom: 55px;
 }
 
 .content-mainvisual {
@@ -403,15 +408,13 @@ a {
 }
 
 .page-title span {
-    padding: 0 50px;
+    display: block;
+    margin-bottom: 10px;
     border-bottom: solid 5px #ff7800;
 }
 
 .content-link {
-    position: relative;
-    overflow: hidden;
-    height: 260px;
-    margin: 0;
+    margin-top: 40px;
 }
 
 .content-link a {
@@ -446,7 +449,7 @@ a {
     margin: 1.25rem 0;
     overflow-wrap: break-word;
     line-height: 1.1;
-    font-size: 2.1875rem;
+    font-size: 1.8rem;
 }
 
 .content-text {
@@ -473,6 +476,42 @@ a {
     font-size: 0.75rem;
 }
 
+.fotter-container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between
+}
+
+.fotter-nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fotter-item {
+    width: 50%;
+    line-height: 2.2;
+    font-size: 0.9375rem;
+}
+
+.fotter-link {
+    height: 24px;
+}
+
+
+/*****-------------------------------
+    Media query
+-------------------------------*****/
+
+
+/*hover 100x5 border*/
+
 .pc-only {
     display: none;
 }
@@ -490,9 +529,6 @@ a {
 }
 
 @media (min-width:768px) {
-    body {
-        font-size: 16px;
-    }
     .container {
         max-width: 750px
     }
@@ -502,9 +538,16 @@ a {
     .pc-only {
         display: block;
     }
+    .page-title span {
+        display: inline;
+        padding: 0 50px;
+    }
 }
 
 @media (min-width:992px) {
+    body {
+        font-size: 16px;
+    }
     .container {
         max-width: 970px
     }
@@ -543,6 +586,9 @@ a {
         margin: auto;
         background: #1e1e1e;
         line-height: 2;
+    }
+    .content-title {
+        font-size: 2.5rem;
     }
 }
 
