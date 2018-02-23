@@ -1,8 +1,34 @@
 @charset "UTF-8";
+/*  memo
+
+    CSSプロパティ書き順
+----------------------
+    1.0 位置と表示関係
+    2.0 幅高さ
+    3.0 余白
+    4.0 線
+    5.0 背景
+    6.0 フォント
+    7.0 その他
+----------------------
+
+----------------------
+    1.0 リセット
+    2.0 共通設定
+    3.0 レイアウト
+    4.0 コンポーネント
+    5.0 ヘッダー
+    6.0 フッター
+----------------------
+
+
+------------------------*/
+/*  Import Web font
+------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Anton");
 /*****-------------------------------
     Eric Meyer’s “Reset CSS” 2.0
 -------------------------------*****/
-@import url("https://fonts.googleapis.com/css?family=Anton");
 html,
 body,
 div,
@@ -153,14 +179,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-  margin: 1em 0;
-  padding: 0; }
-
 /*****-------------------------------
     Add reset (Include Bootstrap)
 -------------------------------*****/
@@ -175,9 +193,14 @@ a:hover {
   text-decoration: none;
   color: #fff; }
 
+/* Bootstrap class reset*/
 .navbar {
   margin-bottom: 0;
   border: none; }
+
+.navbar-header {
+  float: none;
+  border: none !important; }
 
 .navbar-toggle {
   padding: 0;
@@ -185,6 +208,9 @@ a:hover {
 
 .navbar-toggle .icon-bar {
   background-color: #fff; }
+
+.navbar-collapse.in {
+  overflow-y: hidden; }
 
 .navbar-collapse,
 .navbar-top,
@@ -195,11 +221,6 @@ a:hover {
           box-shadow: none !important;
   border: none !important; }
 
-.navbar-collapse.in {
-  overflow-y: hidden; }
-
-/*  Import Web font
-------------------------*/
 /*****-------------------------------
     Common initial setting
 -------------------------------*****/
@@ -247,12 +268,40 @@ a {
   letter-spacing: 1px;
   text-transform: uppercase; }
 
+/*****-------------------------------
+    Layout
+-------------------------------*****/
+.l-header {
+  position: relative;
+  z-index: 100000;
+  background-color: #1e1e1e; }
+  @media screen and (min-width: 768px) {
+    .l-header {
+      background: #fff; } }
+
+.l-footer {
+  background: #ff7800;
+  background: linear-gradient(135deg, #ff7800 0%, #ff9600 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7800', endColorstr='#ff9600', GradientType=1); }
+
+@media screen and (min-width: 768px) {
+  .l-container {
+    max-width: 750px; } }
+
+@media screen and (min-width: 992px) {
+  .l-container {
+    max-width: 970px; } }
+
+@media screen and (min-width: 1200px) {
+  .l-container {
+    max-width: 1170px; } }
+
+.l-mainvisual {
+  padding: 0;
+  margin-bottom: 55px; }
+
 /*  header
 ------------------------*/
-.navbar-header {
-  float: none;
-  border: none !important; }
-
 .navbar-logo img {
   display: block;
   width: 160px; }
@@ -288,7 +337,7 @@ a {
   top: 0;
   bottom: 0;
   margin: auto 0;
-  color: #333; }
+  color: #000; }
 
 .navbar-top-right {
   display: -webkit-box;
@@ -444,6 +493,16 @@ a {
           justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 140px; }
+  @media screen and (max-width: 480px) {
+    .fotter-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-bottom: 70px; } }
   @media screen and (min-width: 768px) {
     .fotter-container {
       max-width: 1000px;
@@ -475,8 +534,11 @@ a {
   height: 24px; }
 
 .fotter-container .navbar-brand {
-  padding-top: 0 !important;
-  padding-left: 50px !important; }
+  padding-top: 0;
+  padding-left: 50px; }
+  @media screen and (max-width: 480px) {
+    .fotter-container .navbar-brand {
+      padding-left: 15px; } }
 
 /*****-------------------------------
     Component
@@ -495,12 +557,18 @@ a {
   font-family: 'Anton', sans-serif;
   font-size: 3.125rem;
   color: #fff; }
+  @media screen and (max-width: 480px) {
+    .page-title {
+      margin-left: -5px; } }
 
 .page-title span {
   display: inline-block;
   padding: 0 50px 10px;
   margin-bottom: 10px;
   border-bottom: solid 5px #ff7800; }
+  @media screen and (max-width: 480px) {
+    .page-title span {
+      padding: 0 0 10px !important; } }
 
 /*  Content card
 ------------------------*/
@@ -529,9 +597,6 @@ a {
 .content-title {
   position: relative;
   z-index: 100;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -551,7 +616,7 @@ a {
   height: 160px;
   padding: 10px 15px 35px;
   margin: 0 -15px -15px;
-  background-color: black;
+  background-color: #000;
   text-overflow: ellipsis;
   overflow-wrap: break-word;
   line-height: 1.75;
@@ -572,34 +637,3 @@ a {
 
 /*  Content text
 ------------------------*/
-/*****-------------------------------
-    Layout
--------------------------------*****/
-.l-header {
-  position: relative;
-  z-index: 100000;
-  background-color: #1e1e1e; }
-  @media screen and (min-width: 768px) {
-    .l-header {
-      background: #fff; } }
-
-.l-footer {
-  background: #ff7800;
-  background: linear-gradient(135deg, #ff7800 0%, #ff9600 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7800', endColorstr='#ff9600', GradientType=1); }
-
-@media screen and (min-width: 768px) {
-  .l-container {
-    max-width: 750px; } }
-
-@media screen and (min-width: 992px) {
-  .l-container {
-    max-width: 970px; } }
-
-@media screen and (min-width: 1200px) {
-  .l-container {
-    max-width: 1170px; } }
-
-.l-mainvisual {
-  padding: 0;
-  margin-bottom: 55px; }

@@ -8,21 +8,52 @@
 //    4.0 base
 //    5.0 styles
 //--------------------*/
-//*----- 1.0 reset -----*/
-@import 'common/reset';
-//*----- 2.0 common -----*/
+
+/*  memo
+
+    CSSプロパティ書き順
+----------------------
+    1.0 位置と表示関係
+    2.0 幅高さ
+    3.0 余白
+    4.0 線
+    5.0 背景
+    6.0 フォント
+    7.0 その他
+----------------------
+
+----------------------
+    1.0 リセット
+    2.0 共通設定
+    3.0 レイアウト
+    4.0 コンポーネント
+    5.0 ヘッダー
+    6.0 フッター
+----------------------
+
+
+------------------------*/
+
+
+/*  Import Web font
+------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Anton');
+//*----- 1.0 common -----*/
 //@import 'common/fonts';
 @import 'common/color';
 @import 'common/mediaquery';
+//*----- 2.0 reset -----*/
+@import 'common/reset';
 //*----- 3.0 mixins_extends -----*/
 //@import 'mixins_extends';
 //*----- 4.0 base -----*/
 @import 'common/base';
 //*----- 5.0 styles -----*/
+// include each styles
+@import 'common/default';
 // component part styles
 @import 'template/header';
 @import 'template/footer';
 //@import 'template/aside';
 @import 'template/component';
-// include each styles
-@import 'common/default';

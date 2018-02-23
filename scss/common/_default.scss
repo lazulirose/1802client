@@ -5,14 +5,14 @@
 .l-header {
     position: relative;
     z-index: 100000;
-    background-color: #1e1e1e;
+    background-color: $bg;
     @include mq-up(md) {
         background: #fff;
     }
 }
 
 .l-footer {
-    background: #ff7800;
+    background: $main;
     background: -moz-linear-gradient(-45deg, #ff7800 0%, #ff9600 100%);
     background: -webkit-linear-gradient(-45deg, #ff7800 0%, #ff9600 100%);
     background: linear-gradient(135deg, #ff7800 0%, #ff9600 100%);

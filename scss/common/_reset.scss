@@ -164,15 +164,6 @@ table {
     border-spacing: 0;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #cccccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
 
 /*****-------------------------------
     Add reset (Include Bootstrap)
@@ -187,12 +178,20 @@ a:hover {
     opacity: .4;
     transition: .35s;
     text-decoration: none;
-    color: #fff;
+    color: $main-font;
 }
+
+
+/* Bootstrap class reset*/
 
 .navbar {
     margin-bottom: 0;
     border: none;
+}
+
+.navbar-header {
+    float: none;
+    border: none !important;
 }
 
 .navbar-toggle {
@@ -204,6 +203,10 @@ a:hover {
     background-color: #fff;
 }
 
+.navbar-collapse.in {
+    overflow-y: hidden;
+}
+
 .navbar-collapse,
 .navbar-top,
 .navbar-form,
@@ -211,8 +214,4 @@ a:hover {
 .search-btn:hover {
     box-shadow: none !important;
     border: none !important;
-}
-
-.navbar-collapse.in {
-    overflow-y: hidden;
 }
