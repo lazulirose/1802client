@@ -502,7 +502,8 @@ a {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      padding-bottom: 70px; } }
+      padding-bottom: 70px;
+      text-align: center; } }
   @media screen and (min-width: 768px) {
     .fotter-container {
       max-width: 1000px;
