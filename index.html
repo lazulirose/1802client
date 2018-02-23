@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,132 +16,109 @@
 
 <body>
     <header class="header">
-        <div class="search-bar">
-            <div class="contents">
-                <form class="form-inline">
-                    <div class="form-group">
-                        <div class="input-group">
-                            <input class="form-control" id="exampleInputAmount" placeholder="Search for xxx">
-                            <a href="#" class="input-group-addon">Search</a>
+        <nav class="navbar">
+            <div class="">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <h1 class="sp-only navbar-logo">
+                        <a class="navbar-brand" href="#"><img src="./image/logo.svg" alt="MC works"></a>
+                    </h1>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="navbar-top">
+                        <h1 class="pc-only">MC worksは○○○○○○○○○○○○○○○○○○○○○○○○○</h1>
+                        <div class="navbar-top-right">
+                            <form class="navbar-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn btn-default search-btn"><img class="search-icon" src="./image/search_icon.svg" alt=""></button>
+                            </form>
+                            <ul class="navbar-text officialsns">
+                                <li class="officialsns-link">
+                                    <a href="" class="link-icon"><img src="./image/instagram_icon.svg" alt="instagram"></a>
+                                </li>
+                                <li class="officialsns-link">
+                                    <a href="" class="link-icon"><img src="./image/facebook_icon.svg" alt="facebook"></a>
+                                </li>
+                                <li class="officialsns-link">
+                                    <a href="" class="link-icon"><img src="./image/youtube_icon.svg" alt="youtube"></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </form>
-            </div>
-        </div>
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container-fluid">
-                <a href="#">
-                    <h1>Bootstrap Template</h1>
-                </a>
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu-4" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span>menu</span>
-                </button>
-                </div>
-                <div class="navbar-collapse collapse" id="nav-menu-4" aria-expanded="false" style="height: 1px;">
-                    <ul class="nav navbar-nav navbar-center">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">1 <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">1-1</a></li>
-                                <li><a href="#">1-2</a></li>
-                                <li><a href="#">1-3</a></li>
-                                <li><a href="#">1-4</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                    </ul>
+                    <div class="navbar-bottom">
+                        <h1 class="pc-only navbar-logo">
+                            <a class="navbar-brand" href="#"><img src="./image/logo.svg" alt=""></a>
+                        </h1>
+                        <ul class="navber-container">
+                            <li class="nav-item"><a href="" class="nav-link">HOME</a></li>
+                            <li class="nav-item"><a href="" class="nav-link">PRODUCTS</a></li>
+                            <li class="nav-item"><a href="" class="nav-link">GALLERY</a></li>
+                            <li class="nav-item"><a href="" class="nav-link">BOARD</a></li>
+                            <li class="nav-item"><a href="" class="nav-link">DIRECT DEALER</a></li>
+                            <li class="nav-item"><a href="" class="nav-link">LINK</a></li>
+                            <li class="nav-item"><a href="" class="nav-link">CONTACT</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <div id="myCarousel" class="carousel slide">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-                <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="item">
-                    <div class="background" style="background-image:url(https://placehold.jp/1280x430.png)"></div>
-                </div>
-                <div class="item">
-                    <div class="background" style="background-image:url(https://placehold.jp/1280x430.png)"></div>
-                </div>
-                <div class="item active">
-                    <div class="background" style="background-image:url(https://placehold.jp/1280x430.png)"></div>
-                </div>
-            </div>
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
+        <div class="col-xs-12 mainvisual">
+            <!--           1100x500-->
+            <img class="content-mainvisual" src="https://picsum.photos/1100/500/?random" alt="">
         </div>
         <section class="container">
             <div class="clearfix">
-                <div class="">
-                    <h2 class="text-center">Mobile Category menu</h2>
-                    <div class="row contents">
-                        <div class="col-xs-4"><a href="#" class="btn btn-default btn-block">Category name</a></div>
-                        <div class="col-xs-4"><a href="#" class="btn btn-default btn-block">Category name</a></div>
-                        <div class="col-xs-4"><a href="#" class="btn btn-default btn-block">Category name</a></div>
-                    </div>
-                    <div class="row contents">
-                        <div class="col-xs-4"><a href="#" class="btn btn-default btn-block">Category name</a></div>
-                        <div class="col-xs-4"><a href="#" class="btn btn-default btn-block">Category name</a></div>
-                        <div class="col-xs-4"><a href="#" class="btn btn-default btn-block">Category name</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-9 clearfix">
-                <div id="my-modal1" class="modal" tabindex="-1" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <img src="https://placehold.jp/800x600.png" class="img-responsive center-block">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nam mollitia officiis veniam sed totam, laudantium consectetur eveniet. Vero, a.</p>
-                            </div>
-                            <div class="modal-footer"><button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button></div>
+                <div class="contentsection">
+                    <h2 class="page-title"><span>Mobile Category menu</span></h2>
+                    <div class="row contents-container">
+                        <div class="col-xs-4 content-link">
+                            <a href="#">
+                                <h3 class="content-title">ダミーだよ</h3>
+                                <img class="content-thumbnail" src="https://picsum.photos/300/100/?random" alt="サムネイル画像">
+                                <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iure qui tenetur vitae itaque non!<span class="text-accent">▶ 一覧を見る</span></p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4 content-link">
+                            <a href="#">
+                                <h3 class="content-title">Lorem ipsum dolor sit amet.</h3>
+                                <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iure qui tenetur vitae itaque non!</p>
+                            </a>
+                        </div>
+                        <div class="col-xs-4 content-link">
+                            <a href="#">
+                                <h3 class="content-title">Lorem ipsum dolor sit amet.</h3>
+                                <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iure qui tenetur vitae itaque non!</p>
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div id="my-modal2" class="modal" tabindex="0" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <img src="https://placehold.jp/800x600.png" class="img-responsive center-block">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam cum magnam debitis unde doloribus officia enim consectetur! Eligendi excepturi ipsum impedit cupiditate aliquid nobis, minima itaque officia odio eveniet deleniti?</p>
-                            </div>
-                            <div class="modal-footer"><button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button></div>
+                    <div class="row contents-container">
+                        <div class="col-xs-4 content-link">
+                            <a href="#">
+                                <h3 class="content-title">ダミーだよ</h3>
+                                <img class="content-thumbnail" src="https://picsum.photos/300/100/?random" alt="サムネイル画像">
+                                <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iure qui tenetur vitae itaque non!<span class="text-accent">▶ 一覧を見る</span></p>
+                            </a>
                         </div>
-                    </div>
-                </div>
-                <div id="my-modal3" class="modal" tabindex="1" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <img src="https://placehold.jp/800x600.png" class="img-responsive center-block">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, deserunt modi. Fugit dignissimos quisquam esse beatae omnis natus praesentium similique impedit perferendis officiis ea, eveniet harum, eaque deserunt ratione corrupti aut architecto. Reiciendis ab corporis unde animi totam pariatur repellendus veniam omnis aut, temporibus neque iure nisi perspiciatis quod debitis.</p>
-                            </div>
-                            <div class="modal-footer"><button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button></div>
+                        <div class="col-xs-4 content-link">
+                            <a href="#">
+                                <h3 class="content-title">Lorem ipsum dolor sit amet.</h3>
+                                <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iure qui tenetur vitae itaque non!</p>
+                            </a>
                         </div>
-                    </div>
-                </div>
-                <div id="my-modal4" class="modal" tabindex="2" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <img src="https://placehold.jp/800x600.png" class="img-responsive center-block">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi placeat, a eaque ullam dolor! Ab asperiores dolorem, culpa fugit cumque voluptates delectus, accusantium eos nam obcaecati ipsa consequuntur ducimus. Magnam aut animi quisquam nihil ut provident, sunt sit amet quae.</p>
-                            </div>
-                            <div class="modal-footer"><button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button></div>
+                        <div class="col-xs-4 content-link">
+                            <a href="#">
+                                <h3 class="content-title">Lorem ipsum dolor sit amet.</h3>
+                                <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iure qui tenetur vitae itaque non!</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -148,21 +126,22 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container-fluid text-center">
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="container-fluid">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                    </ul>
-                </div>
-                <small class="text-center">Copyright lazulirose All Rights Reserved.</small>
-            </nav>
+        <div class="container-fluid">
+            <div class="">
+                <h1 class="navbar-logo">
+                    <a class="navbar-brand" href="#"><img src="./image/logo.svg" alt=""></a>
+                </h1>
+                <ul class="navber-container">
+                    <li class="nav-item"><a href="" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">PRODUCTS</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">GALLERY</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">BOARD</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">DIRECT DEALER</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">LINK</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">CONTACT</a></li>
+                </ul>
+            </div>
         </div>
-
     </footer>
     <!--script-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
