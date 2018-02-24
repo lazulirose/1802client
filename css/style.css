@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /*  memo
+タグ依存はほとんどないので、クラス使いまわしてスタイル再現できます。
+マルチクラス、クラス名はハイフン使用。
+
 
     CSSプロパティ書き順
 ----------------------
@@ -12,10 +15,12 @@
     7.0 その他
 ----------------------
 
+    CSS記述順
 ----------------------
     1.0 リセット
     2.0 共通設定
     3.0 レイアウト
+    (.l-xxxx)
     4.0 コンポーネント
     5.0 ヘッダー
     6.0 フッター
@@ -25,6 +30,7 @@
 ------------------------*/
 /*  Import Web font
 ------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Anton");
 @import url("https://fonts.googleapis.com/css?family=Anton");
 /*****-------------------------------
     Eric Meyer’s “Reset CSS” 2.0
@@ -222,6 +228,15 @@ a:hover {
   border: none !important; }
 
 /*****-------------------------------
+    Utility
+-------------------------------*****/
+.frame {
+  border: 1px solid #ff7800; }
+
+.en {
+  font-family: "Anton", sans-serif; }
+
+/*****-------------------------------
     Common initial setting
 -------------------------------*****/
 body {
@@ -236,7 +251,7 @@ main {
   display: block;
   padding-bottom: 120px;
   background: #1e3457;
-  background: linear-gradient(135deg, #1e3457 5%, #1e1e1e 68%);
+  background: linear-gradient(135deg, #1e3457 0%, #1e1e1e 49%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3457', endColorstr='#1e1e1e', GradientType=1); }
   @media screen and (min-width: 992px) {
     main {
@@ -555,7 +570,8 @@ a {
 ------------------------*/
 .page-title {
   text-align: center;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 2px;
   font-size: 3.125rem;
   color: #fff; }
   @media screen and (max-width: 480px) {
@@ -581,8 +597,7 @@ a {
   position: relative;
   display: block;
   width: 100%;
-  padding: 0 15px 15px;
-  border: 1px solid #ff7800; }
+  padding: 0 15px 15px; }
 
 .content-thumbnail {
   position: absolute;
@@ -606,6 +621,8 @@ a {
   margin: 15px 0;
   overflow-wrap: break-word;
   line-height: 1.1;
+  letter-spacing: 2px;
+  font-family: "Anton", sans-serif;
   font-size: 1.8rem; }
   @media screen and (min-width: 992px) {
     .content-title {
@@ -638,3 +655,61 @@ a {
 
 /*  Content text
 ------------------------*/
+.product-text {
+  padding: 0 25px; }
+
+.product-catchcopy {
+  padding-top: 45px;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 6px;
+  font-size: 1.7rem; }
+
+.product-introduction {
+  padding-top: 55px;
+  margin-bottom: 20px;
+  line-height: 1.9;
+  letter-spacing: 2px;
+  font-size: 0.9rem; }
+
+.product-spec {
+  margin-top: 15px;
+  margin-bottom: 60px; }
+
+/*  Price table
+------------------------*/
+.product-price {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem; }
+
+.product-header {
+  padding: 18px 5px;
+  height: 50px;
+  background: #fff;
+  color: #050100; }
+  @media screen and (min-width: 768px) {
+    .product-header {
+      padding: 18px 27px; } }
+  @media screen and (max-width: 480px) {
+    .product-header {
+      padding: 18px 0px; } }
+
+.product-cell {
+  display: inline-block;
+  padding: 18px 3px;
+  height: 50px;
+  border: 1px solid #fff; }
+  @media screen and (min-width: 768px) {
+    .product-cell {
+      padding: 18px 20px; } }
+  @media screen and (max-width: 480px) {
+    .product-cell {
+      padding: 18px 0px; } }

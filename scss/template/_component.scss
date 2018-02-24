@@ -18,7 +18,8 @@
 
 .page-title {
     text-align: center;
-    font-family: 'Anton', sans-serif;
+    font-family: $font-en;
+    letter-spacing: 2px;
     font-size: 3.125rem;
     color: $main-font;
     @include mq-down(sm) {
@@ -50,7 +51,6 @@
     display: block;
     width: 100%;
     padding: 0 15px 15px;
-    border: 1px solid $main;
 }
 
 .content-thumbnail {
@@ -73,6 +73,8 @@
     margin: 15px 0;
     overflow-wrap: break-word;
     line-height: 1.1;
+    letter-spacing: 2px;
+    font-family: $font-en;
     font-size: 1.8rem;
     @include mq-up(lg) {
         font-size: 2.5rem;
@@ -109,3 +111,67 @@
 
 /*  Content text
 ------------------------*/
+
+.product-text {
+    padding: 0 25px;
+}
+
+.product-catchcopy {
+    padding-top: 45px;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 6px;
+    font-size: 1.7rem;
+}
+
+.product-introduction {
+    padding-top: 55px;
+    margin-bottom: 20px;
+    line-height: 1.9;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
+.product-spec {
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+
+/*  Price table
+------------------------*/
+
+.product-price {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.product-header {
+    padding: 18px 5px;
+    height: 50px;
+    background: #fff;
+    color: #050100;
+    @include mq-up(md) {
+        padding: 18px 27px;
+    }
+    @media screen and (max-width: 480px) {
+        padding: 18px 0px;
+    }
+}
+
+.product-cell {
+    display: inline-block;
+    padding: 18px 3px;
+    height: 50px;
+    border: 1px solid #fff;
+    @include mq-up(md) {
+        padding: 18px 20px;
+    }
+    @media screen and (max-width: 480px) {
+        padding: 18px 0px;
+    }
+}

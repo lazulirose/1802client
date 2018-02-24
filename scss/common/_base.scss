@@ -4,6 +4,7 @@
 
 body {
     overflow-x: hidden;
+    @include font-family("hiragino");
     font-size: 14px;
     color: $main-font;
     @include mq-up(lg) {
@@ -14,10 +15,10 @@ body {
 main {
     display: block;
     padding-bottom: 120px;
-    background: rgb(30, 52, 87);
-    background: -moz-linear-gradient(-45deg, rgb(30, 52, 87) 5%, rgb(30, 30, 30) 68%);
-    background: -webkit-linear-gradient(-45deg, rgb(30, 52, 87) 5%, rgb(30, 30, 30) 68%);
-    background: linear-gradient(135deg, rgb(30, 52, 87) 5%, rgb(30, 30, 30) 68%);
+    background: #1e3457;
+    background: -moz-linear-gradient(-45deg, #1e3457 0%, #1e1e1e 49%);
+    background: -webkit-linear-gradient(-45deg, #1e3457 0%, #1e1e1e 49%);
+    background: linear-gradient(135deg, #1e3457 0%, #1e1e1e 49%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e3457', endColorstr='#1e1e1e', GradientType=1);
     @include mq-up(lg) {
         margin-top: -35px;

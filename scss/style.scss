@@ -10,6 +10,9 @@
 //--------------------*/
 
 /*  memo
+タグ依存はほとんどないので、クラス使いまわしてスタイル再現できます。
+マルチクラス、クラス名はハイフン使用。
+
 
     CSSプロパティ書き順
 ----------------------
@@ -22,10 +25,12 @@
     7.0 その他
 ----------------------
 
+    CSS記述順
 ----------------------
     1.0 リセット
     2.0 共通設定
     3.0 レイアウト
+    (.l-xxxx)
     4.0 コンポーネント
     5.0 ヘッダー
     6.0 フッター
@@ -39,14 +44,17 @@
 ------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Anton');
+$font-en: 'Anton',
+sans-serif;
 //*----- 1.0 common -----*/
-//@import 'common/fonts';
+@import 'common/fonts';
 @import 'common/color';
 @import 'common/mediaquery';
 //*----- 2.0 reset -----*/
 @import 'common/reset';
-//*----- 3.0 mixins_extends -----*/
+//*----- 3.0 mixins_extends, utility -----*/
 //@import 'mixins_extends';
+@import 'common/utility';
 //*----- 4.0 base -----*/
 @import 'common/base';
 //*----- 5.0 styles -----*/
