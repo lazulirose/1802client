@@ -274,6 +274,7 @@ table {
                 padding: 0 20px;
                 margin: 20px;
                 vertical-align: middle;
+                font-weight: bold;
             }
             td:first-child,
             td:last-child {
@@ -282,7 +283,7 @@ table {
                 letter-spacing: 1px;
                 @extend .en;
             }
-            td:first-child {
+            .newstime {
                 width: 150px;
             }
             td time {
@@ -336,4 +337,96 @@ table {
             opacity: 1;
         }
     }
+}
+
+
+/*  Article
+------------------------*/
+
+.article-title {
+    height: 40px;
+    padding: 0 20px;
+    background: $main;
+    line-height: 2.5rem;
+    font-size: 1.125rem;
+}
+
+.article-title+time {
+    display: block;
+    height: 35px;
+    padding: 0 20px;
+    border: 1px solid $main;
+    line-height: 2.5rem;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+.article-thumbnail {
+    width: 100%;
+    max-height: 350px;
+    margin-top: 30px;
+}
+
+.article-content {
+    margin-top: 40px;
+    line-height: 1.9;
+    font-size: 0.8rem;
+    p {
+        margin-bottom: 1rem;
+    }
+}
+
+
+/*  Sidebar
+------------------------*/
+
+.sidebar-content {
+    padding: 0 30px;
+    margin-bottom: 60px;
+}
+
+.sidebar-title {
+    width: 100%;
+    height: 50px;
+    padding: 0 30px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    border-top: 5px solid $main;
+    border-bottom: 2px solid $main;
+    line-height: 2.6rem;
+    @extend .en;
+    font-size: 1.6rem;
+}
+
+.sidebar-content select {
+    width: 100%;
+    padding: 10px 15px;
+    background: #c8c8c8;
+    line-height: 2;
+    font-size: 0.8rem;
+    color: $sub-font;
+    option {
+        background: #fff;
+    }
+}
+
+.sidebar-link {
+    padding: 10px 0;
+    line-height: 1.8;
+    font-size: 0.8rem;
+}
+
+.sidebar-link ul li {
+    margin-left: 16px;
+}
+
+.sidebar-link a::before {
+    content: "▶";
+    margin-right: 2px;
+}
+
+.sidebar-tag li {
+    display: inline;
+    margin-right: 1rem;
+    line-height: 2;
 }
